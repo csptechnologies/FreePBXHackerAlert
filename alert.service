@@ -1,0 +1,11 @@
+[Unit]
+Description=FreePBX Discord Login Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/local/sbin/discord_monitor.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
